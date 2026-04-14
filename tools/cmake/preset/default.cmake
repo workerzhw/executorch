@@ -166,6 +166,9 @@ define_overridable_option(
   EXECUTORCH_BUILD_XNNPACK "Build the XNNPACK backend" BOOL OFF
 )
 define_overridable_option(
+  EXECUTORCH_BUILD_ZLPU "Build the ZLPU backend" BOOL OFF
+)
+define_overridable_option(
   EXECUTORCH_BUILD_VULKAN "Build the Vulkan backend" BOOL OFF
 )
 define_overridable_option(

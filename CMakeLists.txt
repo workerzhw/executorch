@@ -723,6 +723,11 @@ if(EXECUTORCH_BUILD_XNNPACK)
   list(APPEND _executorch_backends xnnpack_backend)
 endif()
 
+if(EXECUTORCH_BUILD_ZLPU)
+  add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/backends/zlpu)
+  list(APPEND _executorch_backends zlpu_backend)
+endif()
+
 if(EXECUTORCH_BUILD_CORTEX_M)
   add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/backends/cortex_m)
 endif()
